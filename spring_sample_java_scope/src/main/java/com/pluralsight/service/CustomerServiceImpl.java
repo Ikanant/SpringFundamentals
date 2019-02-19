@@ -11,7 +11,7 @@ import com.pluralsight.repository.CustomerRepository;
 import com.pluralsight.repository.HibernateCustomerRepositoryImpl;
 
 @Service("customerService")
-@Scope("singleton")
+@Scope("prototype")
 public class CustomerServiceImpl implements CustomerService {
 	@Autowired
 	private CustomerRepository customerRepository;
